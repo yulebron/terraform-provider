@@ -20,6 +20,7 @@ import (
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/ots"
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/rds"
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/vpc"
+	"github.com/aliyun/alibaba-cloud-sdk-go/services/cbn"
 	"github.com/aliyun/aliyun-log-go-sdk"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/aliyun/fc-go-sdk"
@@ -71,6 +72,7 @@ type AliyunClient struct {
 	cmsconn         *cms.Client
 	logconn         *sls.Client
 	fcconn          *fc.Client
+	cenconn			*cbn.Client
 }
 
 // Client for AliyunClient
